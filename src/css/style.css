@@ -1,0 +1,55 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(5 1fr);
+    grid-row-gap: 1em;
+    
+}
+.menu{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;    
+    grid-auto-rows: 5em;
+    background-color: rgba(74, 136, 122, 0.589);
+    color:  white;   
+}
+.menu > div{
+    background-color: rgba(10, 83, 67, 0.589);
+    padding: 1em 3em;
+    margin: 1em;
+}
+.menu > div:nth-child(odd){
+    background-color: rgba(10, 83, 67, 0.589);
+    padding: 1em 3em;
+}
+.header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgba(20, 94, 69, 0.589);
+    grid-auto-rows: 20em;
+    justify-items: center;
+    
+}
+
+.header > div:nth-child(even) {
+    background-color: rgba(10, 83, 67, 0.589);
+}
+
+.form{
+    display:grid;
+    padding: 1em;
+    background-color: rgba(39, 104, 90, 0.589);
+    font-size: 20px;
+}
+
+.form input{
+    width: 100%;
+    height: 25px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: rgba(10, 83, 67, 0.589);
+}
+body{
+    margin: 0 0;
+}
