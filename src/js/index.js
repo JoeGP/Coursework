@@ -5,19 +5,15 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Body from '../components/Body'
 
-
+ 
 function App(){
-    const time = new Date().toLocaleTimeString();
-    const footer =  <div>
-                   Master's Project by Joseph Lamptey, Higher School of Economics
-                   <p>{time}</p>
-                 </div>
-
+   
     const Course = 
-        (<div className='container'>
+        (<div className='layout'>
             <Menu />
             <Header />
-            {footer}
+            <Body />
+            
         </div>);
 
     ReactDOM.render(
@@ -26,4 +22,5 @@ function App(){
     );
 }
 
-setInterval(App,1000)
+App()
+//setInterval(App,1000)
